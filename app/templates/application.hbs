@@ -1,0 +1,27 @@
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">Sommer</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item">{{#link-to 'pages' class="button-news pure-menu-link"}}News{{/link-to}}</li>
+                <li class="pure-menu-item">{{#link-to 'pages' class="button-works pure-menu-link"}}Works{{/link-to}}</li>
+                <li class="pure-menu-item">{{#link-to 'pages' class="button-bio pure-menu-link"}}Bio{{/link-to}}</li>
+                <li class="pure-menu-item">{{#link-to 'pages' class="button-rss pure-menu-link"}}Rss{{/link-to}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+<script src="js/ui.js"></script>
+
+<div id="main">
+{{outlet}}
+</div>
+</div>
